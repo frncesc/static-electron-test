@@ -1,20 +1,25 @@
 'use strict';
-const path = require('path');
+/// const path = require('path');
 const {app, Menu, shell} = require('electron');
 const {
-	is,
-	appMenu,
-	aboutMenuItem,
-	openUrlMenuItem,
-	openNewGitHubIssue,
-	debugInfo
+	is
+	/// appMenu,
+	/// aboutMenuItem,
+	/// openUrlMenuItem,
+	/// openNewGitHubIssue,
+	/// debugInfo
 } = require('electron-util');
 const config = require('./config');
 
+/**
+ * NO PREFERENCES USED
 const showPreferences = () => {
 	// Show the app's preferences here
 };
+*/
 
+/**
+ * NO HELP MENU
 const helpSubmenu = [
 	openUrlMenuItem({
 		label: 'Website',
@@ -29,7 +34,6 @@ const helpSubmenu = [
 		click() {
 			const body = `
 <!-- Please succinctly describe your issue and steps to reproduce it. -->
-
 
 ---
 
@@ -51,11 +55,13 @@ if (!is.macos) {
 		},
 		aboutMenuItem({
 			icon: path.join(__dirname, 'static', 'icon.png'),
-			text: 'Created by Your Name'
+			text: 'Created by ...'
 		})
 	);
 }
+*/
 
+// Debug menú is only shown in devel mode
 const debugSubmenu = [
 	{
 		label: 'Show Settings',
@@ -66,7 +72,7 @@ const debugSubmenu = [
 	{
 		label: 'Show App Data',
 		click() {
-			shell.openItem(app.getPath('userData'));
+			shell.openPath(app.getPath('userData'));
 		}
 	},
 	{
@@ -91,6 +97,8 @@ const debugSubmenu = [
 ];
 
 const macosTemplate = [
+	/**
+	 * NO 'app' MENU
 	appMenu([
 		{
 			label: 'Preferences…',
@@ -100,33 +108,42 @@ const macosTemplate = [
 			}
 		}
 	]),
+	 */
 	{
 		role: 'fileMenu',
 		submenu: [
+			/**
+			 * Show just the 'close' option
 			{
 				label: 'Custom'
 			},
 			{
 				type: 'separator'
 			},
+			 */
 			{
 				role: 'close'
 			}
 		]
 	},
+	/**
+	 * NO 'edit' MENU
 	{
 		role: 'editMenu'
 	},
+	 */
 	{
 		role: 'viewMenu'
 	},
 	{
 		role: 'windowMenu'
-	},
-	{
-		role: 'help',
-		submenu: helpSubmenu
 	}
+	/*
+		{
+			role: 'help',
+			submenu: helpSubmenu
+		}
+	*/
 ];
 
 // Linux and Windows
@@ -134,6 +151,8 @@ const otherTemplate = [
 	{
 		role: 'fileMenu',
 		submenu: [
+			/**
+			 * Show just the 'quit' option
 			{
 				label: 'Custom'
 			},
@@ -150,21 +169,28 @@ const otherTemplate = [
 			{
 				type: 'separator'
 			},
+			 */
 			{
 				role: 'quit'
 			}
 		]
 	},
+	/**
+	 * NO 'edit' MENU
 	{
 		role: 'editMenu'
 	},
+	 */
 	{
 		role: 'viewMenu'
-	},
-	{
-		role: 'help',
-		submenu: helpSubmenu
 	}
+	/**
+	 * NO 'help' menu
+		{
+			role: 'help',
+			submenu: helpSubmenu
+		}
+	*/
 ];
 
 const template = process.platform === 'darwin' ? macosTemplate : otherTemplate;
