@@ -1,16 +1,16 @@
 'use strict';
-const path = require('path');
+/// const path = require('path');
 const {app, BrowserWindow, Menu} = require('electron');
 /// const {autoUpdater} = require('electron-updater');
 const {is} = require('electron-util');
 const unhandled = require('electron-unhandled');
 const debug = require('electron-debug');
 const contextMenu = require('electron-context-menu');
-// const config = require('./config');
+/// const config = require('./config');
 const menu = require('./menu');
 const serve = require('electron-serve');
 
-const loadURL = serve({directory: 'readymag'});
+const loadURL = serve({directory: 'web-content/readymag'});
 
 unhandled();
 debug();
@@ -51,7 +51,7 @@ const createMainWindow = async () => {
 		mainWindow = undefined;
 	});
 
-	// await win.loadFile(path.join(__dirname, 'index.html'));
+	/// await win.loadFile(path.join(__dirname, 'index.html'));
 	await loadURL(win);
 
 	return win;
@@ -89,6 +89,6 @@ app.on('activate', async () => {
 	Menu.setApplicationMenu(menu);
 	mainWindow = await createMainWindow();
 
-	//const favoriteAnimal = config.get('favoriteAnimal');
-	//mainWindow.webContents.executeJavaScript(`document.querySelector('header p').textContent = 'Your favorite animal is ${favoriteAnimal}'`);
+	/// const favoriteAnimal = config.get('favoriteAnimal');
+	/// mainWindow.webContents.executeJavaScript(`document.querySelector('header p').textContent = 'Your favorite animal is ${favoriteAnimal}'`);
 })();
