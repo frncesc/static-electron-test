@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1"
+   viewBox="0 0 48 48"
+   enable-background="new 0 0 48 48"
+   id="svg22"
+   sodipodi:docname="Icon.svg"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   inkscape:export-filename="/home/fbusquet/dev/diversos/electron/rdm/static/Icon.png"
+   inkscape:export-xdpi="2048"
+   inkscape:export-ydpi="2048">
+  <metadata
+     id="metadata28">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs26" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1860"
+     inkscape:window-height="1016"
+     id="namedview24"
+     showgrid="false"
+     inkscape:zoom="17.958333"
+     inkscape:cx="27.916195"
+     inkscape:cy="16.798819"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg22"
+     inkscape:document-rotation="0" />
+  <path
+     fill="#8BC34A"
+     d="M43,36H29V14h10.6c0.9,0,1.6,0.6,1.9,1.4L45,26v8C45,35.1,44.1,36,43,36z"
+     id="path2" />
+  <path
+     fill="#388E3C"
+     d="M29,36H5c-1.1,0-2-0.9-2-2V9c0-1.1,0.9-2,2-2h22c1.1,0,2,0.9,2,2V36z"
+     id="path4" />
+  <g
+     fill="#37474F"
+     id="g10">
+    <circle
+       cx="37"
+       cy="36"
+       r="5"
+       id="circle6" />
+    <circle
+       cx="13"
+       cy="36"
+       r="5"
+       id="circle8" />
+  </g>
+  <g
+     fill="#78909C"
+     id="g16">
+    <circle
+       cx="37"
+       cy="36"
+       r="2"
+       id="circle12" />
+    <circle
+       cx="13"
+       cy="36"
+       r="2"
+       id="circle14" />
+  </g>
+  <path
+     fill="#37474F"
+     d="M41,25h-7c-0.6,0-1-0.4-1-1v-7c0-0.6,0.4-1,1-1h5.3c0.4,0,0.8,0.3,0.9,0.7l1.7,5.2c0,0.1,0.1,0.2,0.1,0.3V24 C42,24.6,41.6,25,41,25z"
+     id="path18" />
+  <polygon
+     fill="#DCEDC8"
+     points="21.8,13.8 13.9,21.7 10.2,17.9 8,20.1 13.9,26 24,15.9"
+     id="polygon20" />
+</svg>
