@@ -1,7 +1,7 @@
 {
 	"name": "static-electron-test",
 	"productName": "Test App",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "Testing Electron with static web sites",
 	"license": "MIT",
 	"repository": "frncesc/static-electron-test",
